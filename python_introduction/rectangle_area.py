@@ -4,4 +4,4 @@ width = 5
 # Calculate the area 
 Area = length * width
 #result
-print(f"Calculate the area of the rectangle is",Area)
+print(f"The area of the rectangle is",Area)
