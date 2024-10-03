@@ -16,5 +16,5 @@ def calculate_future_date():
 
 if __name__ == "__main__":
     display_current_datetime()     
-    calculate_future_date()  
-    
+    calculate_future_date() 
+my_list = [1,2,3,4,5,6,7,"Hello"]
