@@ -1,7 +1,7 @@
 def safe_divide(numerator, denominator):
     try:
-        num = float(numerator)
-        denom = float(denominator)
+        num = int(numerator)
+        denom = int(denominator)
 
         if denom == 0:
             return "Error: Cannot divide by zero."
