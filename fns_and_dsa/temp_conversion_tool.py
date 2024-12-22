@@ -1,14 +1,17 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = (5/9)
 CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
 FAHRENHEIT_OFFSET = 32
+
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
     celsius = (fahrenheit - FAHRENHEIT_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
+
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
     return fahrenheit
+
 def main():
     try:
         
@@ -22,11 +25,10 @@ def main():
             print(f"{temp_value}°C is {result}°F")
         elif unit == 'F':
             result = convert_to_celsius (temp_value)
-            print(f"{temp_value}°F is {result}°C")
+            print(f"{temp_value}°C is {result}°C")
         else:
             print("Invalid Unit.")
     except Exception as e:
         print(e)
 if __name__ == "__main__":
-    main()
-    
+    main() 
